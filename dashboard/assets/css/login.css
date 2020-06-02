@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+    .loginInnerWrapper{
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+.loginContainer{
+       
+    height: 100%;
+    position: relative;
+    padding: 10px;
+    padding-top: 60px;
+
+}
+.loginWrapper{
+    position: relative;
+    width: 100%;
+}
+.loginContainer input{
+    width: 100%;
+    height: 60px;
+    
+}
+.logWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.logWrapper img{
+    width: 200px;
+
+}

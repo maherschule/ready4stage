@@ -1,0 +1,16 @@
+{
+    "description": "Mittelstufe Projekt FIA85 Gruppe 3",
+    "name": "maher-wsl/ready4stage",
+    "authors": [
+        {
+            "name": "Maher Hasan",
+            "email": "mh@km-it.de"
+        }
+    ],
+	"autoload" : {
+		"psr-4" : {
+			"" : ""
+		}
+	},
+    "require": {}
+}
