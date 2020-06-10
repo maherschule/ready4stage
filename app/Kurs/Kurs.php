@@ -13,11 +13,11 @@ class Kurs implements Iorm{
     public $Kurs;
     public $Kursart;
     public $Dozent_ID;
-
+  
     /**
      * @var PDO
      */
-    public $db;
+    private $db;
     public function __construct(){
         $args = func_get_args();
         if($args){

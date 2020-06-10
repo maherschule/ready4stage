@@ -12,7 +12,7 @@ class Instrument implements Iorm{
     static public $pkName = 'Instument_ID';
     public $Instument_ID;
     public $Instrument;
-
+    private $db;
 
     public function __construct(){
         $args = func_get_args();

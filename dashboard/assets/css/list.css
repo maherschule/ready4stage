@@ -15,6 +15,7 @@
 }
 .listBody{
     padding-top: 10px;
+
 }
 .listHeader{
     display: flex;
@@ -42,6 +43,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    max-height: 500px;
+    min-height: 500px;
+    overflow: auto;
 }
 .listEle{
     display: flex;

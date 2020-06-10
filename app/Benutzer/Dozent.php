@@ -3,6 +3,7 @@ namespace app\Benutzer;
 
 use app\DB\Iorm;
 use app\DB\Torm;
+use PDO;
 
 class Dozent implements Iorm{
     use Torm;
@@ -26,11 +27,17 @@ class Dozent implements Iorm{
     private $db;
 
  
-    public function __construct(\PDO $db, $data = array()){
-        $this->db = $db;   
-        if(count($data)){
-            $this->apply($data);
+    public function __construct(){
+        $args = func_get_args();
+        if($args){
+            $isPdo = $args[0] instanceof PDO;
+            if($isPdo) $this->db = $args[0];
+            if(isset($args[1]) && is_array($args[1]) && !empty($args[1])){
+                $this->apply($args[1]);
+            }
         }
+
+        return $this;
     }
 
     public function apply($data = []){
