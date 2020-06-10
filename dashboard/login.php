@@ -4,7 +4,7 @@
         <div class="loginContainer">
             <div class="loginInnerWrapper">
                 <div class="logWrapper">
-                            <img src="assets/media/logo.jpeg" alt="">
+                            <img src="assets/media/logo.png" alt="">
                 </div>
                 <div class="loginWrapper">
                     <div class="middleSection">

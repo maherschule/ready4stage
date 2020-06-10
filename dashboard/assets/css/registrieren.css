@@ -1,0 +1,56 @@
+.registrierenContainer{
+       
+    height: 100%;
+    position: relative;
+    padding: 10px;
+    /* padding-top: 60px; */
+
+}
+.loginWrapper{
+    position: relative;
+    width: 100%;
+}
+.registrierenContainer input{
+    height: 60px;
+    
+}
+
+.nameWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nameWrapper .textFormInput{
+    width: 48%;
+
+}
+.gebutsWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gebutsWrapper .textFormInput{
+    width: 30%;
+}
+.gebutsWrapper .jahr {
+    width: 40%;
+}
+.gebutsWrapper .monat {
+    width: 25%;
+}
+.gebutsWrapper .tag {
+    width: 25%;
+}
+
+.strasseWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.strasseWrapper .strasse{
+    width: 60%;
+}
+.strasseWrapper .hausnr{
+    width: 33%;
+}

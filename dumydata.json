@@ -1,0 +1,75 @@
+
+[
+    {
+        "Vorname": "Test_Vorname",
+        "Nachname": "Test_Nachname",
+        "Gebutsort" : "Test_ort",
+        "Gebutsdatum" : "1990-04-04",
+        "Strasse" : "Test_Strasse",
+        "Hausnr" : "99",
+        "Email" : "test_mail@mail.com",
+        "Telefonnummer" : "01012012345",
+        "IBAN": "DE 0000 0000 000 00"
+    },
+    {
+        "Vorname": "Test_Vorname",
+        "Nachname": "Test_Nachname",
+        "Gebutsort" : "Test_ort",
+        "Gebutsdatum" : "1990-04-04",
+        "Strasse" : "Test_Strasse",
+        "Hausnr" : "99",
+        "Email" : "test_mail@mail.com",
+        "Telefonnummer" : "01012012345",
+        "IBAN": "DE 0000 0000 000 00",
+        "Stundensatz": 72
+    },
+
+    {
+        "Benutzername" : "test_benutzername",
+        "Benutzer_Passwort" : "$2y$10$A7io2Ys/TDcjQlS51t3yJ.if8m5bpS0qmxGy6aud4EbCycZ3bkBzG",
+        "Benutzerrole": "Schueler",
+        "Benutzer_Email" :"Test_benuter_mail"
+    },
+
+    {
+        "Dozentspezifikation_ID" : "1",
+        "Dozent_ID" : "1",
+        "Instrument_ID" : "11"
+    },
+    {
+        "Instrument_ID" : "1",
+        "Instument": "Klavier"
+    },
+
+    {
+        "Raum_ID": "1",
+        "Raumnr" : "Raum x"
+    },
+
+    {
+        "Raumeignung_ID": "1",
+        "Raum_ID" : "2",
+        "Instument_ID" : "4"
+    },
+
+    {
+        "Kurs_ID": "1",
+        "Kurs": "Gesang",
+        "Kursart": "Einzel",
+        "Dozent_ID": "4"
+
+    },
+
+    {
+        "Kursschueler_ID": "1",
+        "Kurs_ID": "1",
+        "Schueler_ID" : "1"
+    },
+
+    {
+        "Kusunterricht_ID": "1",
+        "Kurs_ID" : "1",
+        "Raum_ID": "1",
+        "Datum": "2020-07-12 20:30"
+    }
+]

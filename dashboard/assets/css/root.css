@@ -42,3 +42,31 @@ body, html{
     border: none;
     border-bottom: thin solid rgba(0,0,0,.3);
 }
+
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+
+.fstart{
+    justify-content: flex-start;
+}
+.itemcenter{
+    align-items: center;
+}
+
+.flex1{
+    flex: 1;
+}
+
+.mainContainer{
+    padding: 40px;
+}
+
+.border03{
+    border: thin solid rgba(0,0,0,.2);
+}
+
+.ml20{
+    margin-left: 20px;
+}

@@ -68,7 +68,9 @@ if ((isset($_POST["Benutzername"])) && (isset($_POST["Benutzer_Passwort"]))) {
                 ],
                 'Geburtsort' => $result['Geburtsort'],
                 'Gebutsdatum' => $result['Gebutsdatum'],
-                'Telefonnummer' => $result['Telefonnummer'] 
+                'Telefonnummer' => $result['Telefonnummer'],
+                'Benutzerrole' => $result['Benutzerrole']
+                
             ];
             $_SESSION['LAST_CHECKED'] = time();
             redirect('../dashboard/index.php');

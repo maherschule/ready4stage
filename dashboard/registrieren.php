@@ -1,73 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-         @import url('assets/root.css');
 
-
-        .registrierenContainer{
-       
-            height: 100%;
-            position: relative;
-            padding: 10px;
-            padding-top: 60px;
-
-        }
-        .loginWrapper{
-            position: relative;
-            width: 100%;
-        }
-        .registrierenContainer input{
-            height: 60px;
-            
-        }
-  
-        .nameWrapper {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nameWrapper .textFormInput{
-            width: 48%;
-
-        }
-        .gebutsWrapper{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .gebutsWrapper .textFormInput{
-            width: 30%;
-        }
-        .gebutsWrapper .jahr {
-            width: 40%;
-        }
-        .gebutsWrapper .monat {
-            width: 25%;
-        }
-        .gebutsWrapper .tag {
-            width: 25%;
-        }
-
-        .strasseWrapper{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .strasseWrapper .strasse{
-            width: 60%;
-        }
-        .strasseWrapper .hausnr{
-            width: 33%;
-        }
-
-    </style>
-</head>
-<body>
     <div class="registrierenContainer">
         <div class="registrierenWrapper">
             <div class="nameWrapper">
@@ -96,8 +27,7 @@
 
             <!-- Für Dotzen -->
             <div class="StundensatzWrapper">
-                <input type="text" name="Iban" class="textFormInput Stundensatz" pattern="\$\d{1,}*(\,\d+)?$" placeholder="Stundensatz in Euro">
-
+                <input type="text" name="Stundensatz" class="textFormInput Stundensatz" pattern="\$\d{1,}*(\,\d+)?$" placeholder="Stundensatz in Euro">
             </div>
             <div class="qualifikationWrapper">
                 <select class="selectFormInput" name="Qualifikation" >
@@ -116,5 +46,3 @@
                 </div>
         </div>
     </div>
-</body>
-</html>

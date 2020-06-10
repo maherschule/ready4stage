@@ -1,3 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<img src="assets/media/logo.png" width="40" height="" alt="">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kurse</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mitarbeiter
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Dozent</a>
+          <a class="dropdown-item" href="#">Verwalter</a>
+        </div>
+      </li>
+ 
+    </ul>
+ 
+  </div>
+</nav>
+<!--
 <div class="navContainer">
         <div class="hamburgermenuWrapper">
             <img src="assets/media/hamburgermenu.png" alt="">
@@ -7,7 +36,7 @@
                 <ul class="navLeftUi">
                     <li class="navliEle logo">
                         <a href="index.php">
-                            <img src="assets/media/logo.jpeg" alt="ready4stage">
+                            <img src="assets/media/logo.png" alt="ready4stage">
                         </a>
                     </li>
                     <li class="unterricht navliEle">
@@ -47,3 +76,5 @@
             </li>
         </ul>
     </div>
+
+-->

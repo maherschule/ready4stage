@@ -1,6 +1,8 @@
 <?php
 namespace app\Benutzer;
 
-class Verwalter extends Benutzer{
-  
+use app\DB\Iorm;
+
+class Verwalter implements Iorm{
+    
 }

@@ -1,28 +1,49 @@
 <?php
 namespace app\Benutzer;
 
-class Dozent extends Benutzer {
+use app\DB\Iorm;
+use app\DB\Torm;
+
+class Dozent implements Iorm{
+    use Torm;
+    static public  $table_name = 'Dozent';
+    static public $pkName = 'Dozent_ID';
+    public $Dozent_ID;
+    public $Vorname;
+    public $Nachname;
+    public $Geburtsort;
+    public $Gebutsdatum;
+    public $Strasse;
+    public $Hausnr;
+    public $Email;
+    public $Telefonnummer;
+    public $IBAN;
     public $Stundensatz;
-    public $Qualifikationen = array();
+    public $Benutzername;
+    private $Benutzer_Passwort;
+    public $Benutzerrole;
+    public $Benutzer_Email;
+    private $db;
 
-
-    public function __construct($data)
-    {
-        if($data && $data['Benutzerrolle'] === Benutzer::FLAG_BENUTZERROLLE_DOZENT){
-            $this->Benutzername = $data['Benutzername'] ;
-            $this->Vorname = $data['Vorname'] ;
-            $this->Nachname = $data['Nachname'] ;
-            $this->Email = $data['Email'];
-            $this->Strasse = $data['Strasse'];
-            $this->Hausnr = $data['Hausnr'] ;
-            $this->Iban = $data['Iban'];
-            $this->Benutzerrolle = $data['Benutzerrolle'];
-            $this->Kennwort = $data['Kennwort'];
-            $this->Geburtsort = $data['Geburtsort'];
-            $this->Gebutsdatum = $data['Gebutsdatum'] ;
-            $this->EintragDatum = $data['EintragDatum'];
-            $this->Stundensatz = $data['Stundensatz'];
-            $this->Qualifikationen = $data['Qualifikationen'];
+ 
+    public function __construct(\PDO $db, $data = array()){
+        $this->db = $db;   
+        if(count($data)){
+            $this->apply($data);
         }
     }
+
+    public function apply($data = []){
+        $this->Dozent_ID = $data['Dozent_ID'];
+        $this->Vorname = $data['Vorname'];
+        $this->Nachname = $data['Nachname'];
+        $this->Geburtsort = $data['Geburtsort'];
+        $this->Geburtsdatum = $data['Gebutsdatum'];
+        $this->Strasse = $data['Strasse'];
+        $this->Hausnr = $data['Hausnr'];
+        $this->Email = $data['Email'];
+        $this->Telefonnummer = $data['Telefonnummer'];
+        $this->IBAN = $data['IBAN'];
+   }
+
 }

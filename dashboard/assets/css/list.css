@@ -1,0 +1,59 @@
+.editicon , .deleteicon {
+    width: 25px;
+    cursor: pointer;
+}
+.addicon{
+    height: 40px;
+    width: auto;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.listOuterWrapper{
+    background-color: white;
+    width: 350px;
+    padding: 3px;
+}
+.listBody{
+    padding-top: 10px;
+}
+.listHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    width: 100%;
+}
+.listHeader #inputSearch{
+    height: 100%;
+    width: 100%;
+    font-size: 1.2em;
+    padding-left: 5px;
+    border: thin solid rgba(0,0,0,.2);
+
+}
+.listHeader #inputSearch:active{
+    border: none;
+}
+.listEleRight{
+    position: relative;
+}
+.listBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.listEle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: thin solid rgba(0,0,0,.3);
+}
+.listEleLeft{
+ flex: 1;   
+}
+
+.footermsg{
+    background-color: gray;
+}

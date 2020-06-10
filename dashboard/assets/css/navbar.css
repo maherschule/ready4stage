@@ -1,4 +1,6 @@
-
+li.navliEle:hover{
+    color: blue;
+}
 .navContainer{
     height: 50px;
     background-color: white;
@@ -36,6 +38,17 @@
 }
 .navUlInnerUl{
     display: none;
+    position: absolute;
+
+    background: white;
+    padding-top: 20px;
+}
+.navUlInnerUl .navliEleInner{
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
 }
 .navLeftLi{
     flex: 1;        
@@ -47,48 +60,48 @@
 .hamburgermenuWrapper{
     display: none;
 }
+.navliEle.hasSubMenu{
+    position: relative;
+}
 
 @media (max-width: 768px) {
 
+    .navContainer{
+        background-color: white;
+        position: relative;
+        padding-top: 50px;
+        padding-left: 5px;
 
-.navContainer{
-    background-color: white;
-    position: relative;
-    padding-top: 50px;
-    padding-left: 5px;
-
-}
-.hamburgermenuWrapper {
-    position: absolute;
-    right: 7px;
-    top: 7px;
-}
-.hamburgermenuWrapper img{
-    height: 35px;
-}
+    }
+    .hamburgermenuWrapper {
+        position: absolute;
+        right: 7px;
+        top: 7px;
+    }
+    .hamburgermenuWrapper img{
+        height: 35px;
+    }
 
 
-.navContainer .logo{
-    display: none;
-}
+    .navContainer .logo{
+        display: none;
+    }
 
-.navliEle{
-    height: 50px;
+    .navliEle{
+        height: 50px;
 
-}
-.navliEleInner{
-    height: 50px;
-}
-.navUlInnerUl {
-    display: none;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-.hasSubMenu{
-}
-.navliEle.hasSubMenu{
-    height: 50px;
-}
+    }
+    .navliEleInner{
+        height: 50px;
+    }
+    .navUlInnerUl {
+        display: none;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
 
+    .navliEle.hasSubMenu{
+        height: 50px;
+    }
 
 }
