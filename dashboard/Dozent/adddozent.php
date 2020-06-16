@@ -3,10 +3,11 @@
 use app\Instrument\Instrument;
 
 ?>
-<div class="dozentDialog bg-white ml-4 p-4 d-none">
+<div class="dozentDialog bg-white ml-4 p-4 col-lg-8 col-xl-8 col-s-12 col-xs-12">
 <p class="h3 mt-3 mb-3">Dozent bearbeiten / hinzufügen</p>
 
                          <form>
+                              <input type="hidden" name="dozent_ID" value="0">
                               <div class="row">
                                    <div class="form-group col-xl-6">
                                         <label for="Vorname">Vorname</label>
@@ -31,21 +32,18 @@ use app\Instrument\Instrument;
                                         <input type="text" name="Telefonnummer" class="form-control">
                                    </div>
                               </div>
-
                               <div class="row">
-                                   <div class="form-group col-xl-3">
-                                        <label for="gebTag">Tag</label>
-                                        <input type="text" name="gebTag" class="form-control">
-                                   </div>
-                                   <div class="form-group col-xl-3">
-                                        <label for="gebMonat">Monat</label>
-                                        <input type="text" name="gebMonat" class="form-control">
+                                   <div class="form-group col-xl-6">
+                                        <label for="Geburtsort">Geburtsort</label>
+                                        <input class="form-control" name="Geburtsort" type="text" value="">  
                                    </div>
                                    <div class="form-group col-xl-6">
-                                        <label for="gebJahr">Jahr</label>
-                                        <input type="text" name="gebJahr" class="form-control">
+                                        <label for="Geburtsdatum">Geburtsdatum</label>
+
+                                        <input class="form-control" name="Geburtsdatum" type="date" value="xx.xx.xxxx" id="Geburtsdatum">  
                                    </div>
                               </div>
+
 
                               <div class="row">
                                    <div class="form-group col-xl-8">
@@ -60,14 +58,11 @@ use app\Instrument\Instrument;
                               </div>
 
                               <div class="row">
-                                   <div class="form-group col-xl-12">
-                                        <label for="Iban">IBAN</label>
-                                        <input type="text" name="Iban" class="form-control">
+                                   <div class="form-group col-xl-12 col-lg-12">
+                                        <label for="IBAN">IBAN</label>
+                                        <input type="text" name="IBAN" class="form-control">
                                    </div>
-                              </div>
-
-                              <div class="row">
-                                   <div class="form-group col-xl-12">
+                                   <div class="form-group col-xl-12 col-lg-12">
                                         <label for="Stundensatz">Stundensatz</label>
                                         <input type="text" name="Stundensatz" class="form-control">
                                    </div>
@@ -92,12 +87,13 @@ use app\Instrument\Instrument;
                                    ?>
                                    <hr />
                               </div>
-
                               <div class="row">
                                    <div class="col-xl-12">
                                         <button type="button" class="btn btn-dark float-right ml-4">Speichern</button>
+                                        <!--
                                         <button type="button" class="btn btn-secondary float-right" data-tohide=".dozentDialog">abbrechen</button>
-
+                                        -->
+                                        
                                    </div>
                               </div>
                               

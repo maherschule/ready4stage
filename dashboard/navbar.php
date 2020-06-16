@@ -12,19 +12,31 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Kurse</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Mitarbeiter
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Dozent</a>
-          <a class="dropdown-item" href="#">Verwalter</a>
-        </div>
+      <li class="nav-item">
+        <a class="nav-link" href="raum.php">Raum</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dozent.php">Dozent</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="schueler.php">Schüler</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#">Verwalter</a>
       </li>
  
     </ul>
- 
+    <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">(<?php echo $_SESSION['Benutzer']['Benutzername']; ?>)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logout.php">Abmelden</a>
+            </li>
+    </ul>
   </div>
+
+
 </nav>
 <!--
 <div class="navContainer">

@@ -5,7 +5,7 @@ define('DB_PASS', 'maher1234');
 define('HOST', 'localhost');
 define('DBNAME', 'ready4stage');
 
-$sessiontimeout = 300;
+$sessiontimeout = 1000;
 $tables = [
     'Benutzer' => 'Benutzer',
     'Dozent' => 'Dozent',
