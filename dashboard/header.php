@@ -11,6 +11,7 @@
          @import url('assets/css/login.css');
          @import url('assets/css/list.css');
          @import url('assets/css/registrieren.css');
+         @import url('assets/css/navcards.css');
          @import url('assets/css/alertify/alertify.min.css');
          @import url('assets/css/alertify/themes/bootstrap.min.css');
 

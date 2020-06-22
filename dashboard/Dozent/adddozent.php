@@ -76,7 +76,7 @@ use app\Instrument\Instrument;
                                         foreach($instrumente as $instrument){
                                              $ele .= "<div class='form-group  col-xl-3'>";
                                              $ele .= "<div class='form-check'>";
-                                             $ele .= "<input class='form-check-input' type='checkbox' value='".$instrument['Instument_ID']."' id='".$instrument['Instrument']."'>";
+                                             $ele .= "<input class='form-check-input' type='checkbox' value='".$instrument['Instrument_ID']."' id='".$instrument['Instrument']."'>";
                                              $ele .= "<label class='form-check-label' for='".$instrument['Instrument']."'>";
                                              $ele .= $instrument['Instrument'];
                                              $ele .= "</label>";

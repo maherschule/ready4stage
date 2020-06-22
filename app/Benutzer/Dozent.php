@@ -47,15 +47,16 @@ class Dozent implements Iorm{
 
     public function Dozentspezifikation($id){
         $id = intval($id);
-        $query = "SELECT d.Instument_ID, i.Instrument FROM `".DBNAME."`.`Dozentspezifikation` as d right JOIN `".DBNAME."`.`Instrumente` as i  USING (Instument_ID) WHERE Dozent_Id = :id;";
+        $query = "SELECT d.Instrument_ID, i.Instrument FROM `".DBNAME."`.`Dozentspezifikation` as d right JOIN `".DBNAME."`.`Instrumente` as i  USING (Instrument_ID) WHERE Dozent_Id = :id;";
         $stmt = $this->db->prepare($query);
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
+        $error_code = $stmt->errorCode();
         $result = [];
         // $fetch = $stmt->fetchAll(PDO::FETCH_ASSOC);
         foreach($stmt->fetchAll(PDO::FETCH_ASSOC) as $fetch){
 
-            $result[$fetch['Instument_ID']] = $fetch['Instrument'];
+            $result[$fetch['Instrument_ID']] = $fetch['Instrument'];
         }
         return $result;
    }

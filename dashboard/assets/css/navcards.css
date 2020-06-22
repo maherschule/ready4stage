@@ -1,0 +1,13 @@
+.navcard {
+    width: 150px;
+    height: 150px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navcard p {
+    font-size: 1.4em;
+}

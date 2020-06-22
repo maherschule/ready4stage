@@ -50,7 +50,7 @@ $(document).ready(function(){
                             ele = $(ele);
                             var eleVal = ele.val();
                                 if(eleVal == key){
-                                    ele.attr('checked', true);
+                                    ele.prop('checked', true);
                                 }
                         }) 
                     }
@@ -133,7 +133,7 @@ $(document).ready(function(){
                                     <img class="deleteicon" src="assets/media/delete.png" alt="delete" data-toggle="modal" data-target="#deleteDozentModal">\
                             </div>\
                         </div>';
-        if(Dozent_ID){
+        if(Boolean(Number(Dozent_ID))){
         // update
             $.ajax({
                 method: 'POST',

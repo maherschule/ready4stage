@@ -4,6 +4,7 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/alertify.min.js"></script>
 <script src="assets/js/utils.js"></script>
+<script src="assets/js/navcards.js"></script>
 <script src="assets/js/dozent.js"></script>
 <script src="assets/js/schueler.js"></script>
 <script src="assets/js/raum.js"></script>
