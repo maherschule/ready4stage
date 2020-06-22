@@ -76,7 +76,9 @@ if ((isset($_POST["Benutzername"])) && (isset($_POST["Benutzer_Passwort"]))) {
             redirect('../dashboard/index.php');
             exit;
         }
-       
+        $_SESSION['LAST_CHECKED'] = time();
+        redirect('../dashboard/index.php');
+        exit;
     }
 
 }else{
