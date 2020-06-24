@@ -32,3 +32,31 @@
     width: 200px;
 
 }
+
+.BenutzernameWrapper ,.KennwortWrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    border-bottom: thin solid rgba(0,0,0,.2);
+}
+.BenutzernameWrapper input ,.KennwortWrapper input {
+    background: transparent;
+    outline: none;
+    padding-left: 5px;
+}
+.BenutzernameWrapper label , .KennwortWrapper label {
+    position: absolute;
+    font-size: 2.2em;
+    left: 7px;
+    top: 5px;
+}
+
+.BenutzernameWrapper img , .KennwortWrapper img{
+    height: 77%;
+    filter: contrast(0.3)
+}
+
+ 

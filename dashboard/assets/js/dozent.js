@@ -1,7 +1,11 @@
 $(document).ready(function(){
 
     
+    $('.dozentDialog .abbrechen').on('click', function(){
+        resetInput($('.schuelerDialog'));
+        $('.raumDialog').find('input[type="hidden"]').val(0);
 
+    })
     $('.dozentDialog .btn-secondary').on('click', function(){
         var _this = this;
         $(_this.dataset.tohide).addClass(' d-none');

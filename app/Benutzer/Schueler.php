@@ -1,6 +1,7 @@
 <?php
 namespace app\Benutzer;
 
+use app\DB\DB;
 use app\DB\Iorm;
 use app\DB\Torm;
 
@@ -18,14 +19,20 @@ class Schueler implements Iorm {
     public $Email;
     public $Telefonnummer;
     public $IBAN;
+    
+    /**
+     * @var PDO
+     */
     private $db;
 
- 
-    public function __construct(\PDO $db, $data = array()){
-        $this->db = $db;   
-        if(count($data)){
-            $this->apply($data);
+    public function __construct($data = []){
+        $this->db  = DB::connect();
+        if($data){
+            if(isset($data) && is_array($data) && !empty($data)){
+                $this->apply($data);
+            }
         }
+        return $this;
     }
 
 

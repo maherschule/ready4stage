@@ -31,17 +31,13 @@ class Dozent implements Iorm{
     private $db;
 
  
-    public function __construct(){
-        $args = func_get_args();
-        if($args){
-            $isPdo = $args[0] instanceof PDO;
-            if($isPdo) $this->db = $args[0];
-            if(isset($args[1]) && is_array($args[1]) && !empty($args[1])){
-                $this->apply($args[1]);
+    public function __construct($data = []){
+        $this->db  = DB::connect();
+        if($data){
+            if(isset($data) && is_array($data) && !empty($data)){
+                $this->apply($data);
             }
         }
-
-
         return $this;
     }
 

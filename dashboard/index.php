@@ -1,5 +1,6 @@
 <?php
 
+use app\Benutzer\Benutzer;
 use app\Benutzer\Dozent;
 use app\Benutzer\Schueler;
 use app\Instrument\Instrument;
@@ -15,6 +16,7 @@ include_once dirname(__FILE__, 2) . "/inc/sessionCheck.php";
 <?php include "navbar.php"; ?> 
 
 <?php 
+     $benuzer = new Benutzer();
      $navCards = "";
      foreach($navs as $href => $details){
           if($details['posi'] === 'rechts') continue; 

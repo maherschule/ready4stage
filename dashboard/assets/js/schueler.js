@@ -102,19 +102,23 @@ $(document).ready(function(){
         var dateInput = $dialog.find('input[type="date"]');
 
         var param = {};
+        /*
         param['qualifikation'] = [];
+        */
         param['Geburtsdatum'] = dateInput.val(); 
         textInputs.each(function(index, ele){
             ele = $(ele);
             var eleName = ele.attr('name');
             param[eleName] = ele.val();
         })
+        /*
         checkboxInputs.each(function(index, ele){
             ele = $(ele);
             if(ele.prop('checked') == true) {
                 param['qualifikation'].push(ele.val());
             }
         })
+        */
         var append = '<div class="listEle schueler_'+schueler_ID+'" data-schuelerid="'+schueler_ID+'">\
                             <div class="listEleLeft">\
                                 <p>'+param['Nachname']+', '+param['Vorname']+'</p>\
@@ -124,7 +128,7 @@ $(document).ready(function(){
                                     <img class="deleteicon" src="assets/media/delete.png" alt="delete" data-toggle="modal" data-target="#deleteSchuelerModal">\
                             </div>\
                         </div>';
-        if(schueler_ID){
+        if(Boolean(Number(schueler_ID))){
         // update
             $.ajax({
                 method: 'POST',

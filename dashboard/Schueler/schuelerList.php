@@ -12,7 +12,7 @@ use app\Benutzer\Schueler;
                 </div>
                 <div class="listBody">
                     <?php 
-                        $schueler = new Schueler($db);
+                        $schueler = new Schueler();
                         $schueler = $schueler->get();
                         $name = 'Schüler';
                         $ele = '';

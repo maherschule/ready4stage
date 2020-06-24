@@ -43,7 +43,7 @@ if ((isset($_POST["Benutzername"])) && (isset($_POST["Benutzer_Passwort"]))) {
 
             $_SESSION['Benutzer'] = [
                 'Benutzername' => $result['Benutzername'],
-                'Email' => $result['Benutzer_Email'],
+                'Email' => $result['Email'],
                 'Benutzerrole' => $result['Benutzerrole']
             ];
             $d = 10;
@@ -51,7 +51,8 @@ if ((isset($_POST["Benutzername"])) && (isset($_POST["Benutzer_Passwort"]))) {
             $where = [];
             $from = $result['Benutzerrole'];
             $id = $from . "_ID";
-            $sql = "SELECT a.*, b.Benutzername, b.Benutzerrole FROM `".$from."` a INNER JOIN Benutzer b WHERE b.Benutzerrole = '".$from."' AND b.Benutzer_Email = '".$result['Benutzer_Email']."'" ;
+            //$sql = "SELECT a.*, b.Benutzername, b.Benutzerrole FROM `".$from."` a INNER JOIN Benutzer b WHERE b.Benutzerrole = '".$from."' AND b.Email = '".$result['Email']."'" ;
+            $sql = "SELECT b.*, s.* from Benutzer as b INNER JOIN Schueler as s on s.Email = '".$result['Email']."' AND b.Email = '".$result['Email']."';";
             $result = $db->query($sql)->fetchAll(PDO::FETCH_ASSOC)[0];
        
             

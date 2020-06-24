@@ -90,9 +90,7 @@ use app\Instrument\Instrument;
                               <div class="row">
                                    <div class="col-xl-12">
                                         <button type="button" class="btn btn-dark float-right ml-4">Speichern</button>
-                                        <!--
-                                        <button type="button" class="btn btn-secondary float-right" data-tohide=".dozentDialog">abbrechen</button>
-                                        -->
+                                        <button type="button" class="abbrechen btn btn-secondary float-right">abbrechen</button>
                                         
                                    </div>
                               </div>

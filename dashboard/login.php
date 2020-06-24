@@ -10,10 +10,18 @@
                     <div class="middleSection">
                 
                         <div class="BenutzernameWrapper">
-                            <input type="text" name='Benutzername' placeholder="Benutzername" class="textFormInput" value="<?php echo $_POST['Benutzername'] != "" ? $_POST['Benutzername'] : ""; ?>">
+                            <!-- 
+                            <label for="Benutzername">User</label>
+                            -->
+                            <input type="text" name='Benutzername' class="textFormInput" placeholder="Benutzername" value="<?php echo $_POST['Benutzername'] != "" ? $_POST['Benutzername'] : ""; ?>">
+                            <img src="assets/media/user.png" alt="user icon ">
                         </div>
                         <div class="KennwortWrapper">
-                            <input type="password" name='Benutzer_Passwort' placeholder="Kennwort" class="textFormInput">                
+                            <!--
+                                <label for="Benutzer_Passwort">Password</label>
+                            -->
+                            <input type="password" name='Benutzer_Passwort' placeholder="Password" class="textFormInput">                
+                            <img src="assets/media/password.png" alt="user password">
                         </div>
                         <div class="submitBtnWrpper">
                             <input type="submit" value="Anmelden" class="submitFormInput">

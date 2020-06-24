@@ -14,7 +14,7 @@ use app\Benutzer\Dozent;
                 </div>
                 <div class="listBody">
                     <?php 
-                        $dozent = new Dozent($db);
+                        $dozent = new Dozent();
                         $dozent = $dozent->get();
                         $name = count($dozent) > 1 ? 'Dozent' : 'Dozenten';
                         $ele = '';

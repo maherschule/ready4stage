@@ -21,7 +21,7 @@ use app\Kurs\Kurs;
                               <div class="row">
                                    <?php
                                          
-                                        $dozent = new Dozent($db);
+                                        $dozent = new Dozent();
                                         $dozente = $instrumente->get();
                                         $ele = "";
                                         foreach($dozente as $d){
